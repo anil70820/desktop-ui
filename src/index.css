@@ -1,0 +1,24 @@
+body {
+  background-color: #00000020 !important;
+}
+.transistion_03 {
+  transition: all 300ms linear;
+}
+.bg_brown {
+  background-color: #00000010;
+}
+.rounded_12 {
+  border-radius: 12px;
+}
+.rounded_16 {
+  border-radius: 16px;
+}
+.h_fit{
+  height: fit-content;
+}
+.cursor_pointer{
+  cursor: pointer;
+}
+.leading_100{
+  line-height: 100% !important;
+}
