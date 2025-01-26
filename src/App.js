@@ -1,12 +1,10 @@
-import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Sidebar from './components/Sidebar';
+import './App.css';
 import SidebarSecond from './components/SidebarSecond';
 
 function App() {
   return (
     <div>
-     <Sidebar/>
      <SidebarSecond/>
     </div>
   );

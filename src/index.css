@@ -7,6 +7,9 @@ body {
 .bg_brown {
   background-color: #00000010;
 }
+.rounded_08 {
+  border-radius: 8px;
+}
 .rounded_12 {
   border-radius: 12px;
 }
@@ -21,4 +24,26 @@ body {
 }
 .leading_100{
   line-height: 100% !important;
+}
+.text_hidden{
+  visibility: hidden;
+}
+.search_height{
+  height: 54px;
+}
+
+.search_input input:focus{
+outline: none;
+box-shadow: none;
+border: 1px solid #00000020;
+}
+.search_input input{
+border: 1px solid #00000020;
+border-radius: 8px;
+}
+.ps_dropdown{
+  padding-left: 30px;
+}
+.text_nowrap{
+  text-wrap: nowrap;
 }
