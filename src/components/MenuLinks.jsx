@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { DASHBOARD_LINKS_LIST } from "../utils/helper";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import ProductPopup from "./ProductPopup";
 
 const MenuLinks = ({ isCollapsed, tooltip, setTooltip }) => {
@@ -97,15 +97,16 @@ const MenuLinks = ({ isCollapsed, tooltip, setTooltip }) => {
               {item.isDropdown &&
                 activeDropdown === `menu-${index}` &&
                 item.dropdownItems && (
-                  <div className="ps_dropdown mb-3 position-relative">
+                  <div className="ps_dropdown mb-3 position-relative ">
                     {item.dropdownItems.map((subItem, subIndex) => (
                       <a
                         key={subIndex}
                         href={subItem.link}
-                        className="d-block transistion_03 p-2 link_hover text-black rounded_08 position-relative"
+                        className="transistion_03 p-2 link_hover text-black rounded_08 position-relative d-flex justify-content-between align-items-center"
                       >
                         {subItem.name}
                         <span className="position-absolute link_line"></span>
+                        <span><FaChevronRight size={16}/></span>
                       </a>
                     ))}
                     <span className="position-absolute dropdown_line"></span>

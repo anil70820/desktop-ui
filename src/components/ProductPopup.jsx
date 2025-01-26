@@ -1,5 +1,6 @@
 import React from "react";
 import { DASHBOARD_LINKS_LIST } from "../utils/helper";
+import { FaChevronRight } from "react-icons/fa";
 
 const ProductPopup = () => {
   const menuItems =
@@ -16,10 +17,11 @@ const ProductPopup = () => {
               <a
                 key={subIndex}
                 href={subItem.link}
-                className="d-block transition_03 p-2 link_hover text-black rounded_08 position-relative"
+                className="transition_03 p-2 link_hover text-black rounded_08 position-relative d-flex justify-content-between align-items-center"
               >
                 {subItem.name}
                 <span className="position-absolute link_line"></span>
+                 <span><FaChevronRight size={16}/></span>
               </a>
             ))}
             <span className="position-absolute dropdown_line"></span>

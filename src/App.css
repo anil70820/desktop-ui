@@ -13,7 +13,7 @@
   width: 300px;
 }
 .sidebar_size {
-  height: 100vh;
+  min-height: 100vh;
 }
 .profile_image {
   width: 50px;
@@ -172,6 +172,7 @@
 }
 @media (max-width: 575.98px) {
   .profile_position {
-    left: 0%;
+    left: 12px;
+    bottom: 70px !important;
   }
 }
